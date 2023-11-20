@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+    netcore-mysql:
+      image: "mysql:8.0"
+      container_name: mysql-mvc
+      restart: always
+      hostname: mysqlnet
+      networks:
+        - my-network
+      environment:
+        MYSQL_ROOT_PASSWORD: 123456   #Thiết lập password cho root
+      volumes:
+        - storedb:/var/lib/mysql
+      ports:
+        - "3308:3306"                # Ánh xạ cổng 3308 vào cổng mặc định 3306 SQL
+
+networks:                            # TẠO NETWORK
+  my-network:
+    driver: bridge
+
+volumes:                              # TẠO Ổ ĐĨA LƯU DB
+  storedb:
