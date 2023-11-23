@@ -1,0 +1,179 @@
+# Query: App.Areas.Identity
+# Flags: RegExp
+# ContextLines: 1
+
+38 results - 31 files
+
+Areas\Identity\Controllers\AccountController.cs:
+   8  using System.Threading.Tasks;
+   9  using System.Threading.Tasks;
+  10: using ProjectMVC.Areas.Models.AccountViewModels;
+  10  using App.ExtendMethods;
+  11  using App.ExtendMethods;
+
+Areas\Identity\Controllers\ManageController.cs:
+  4  using System.Threading.Tasks;
+  5  using System.Threading.Tasks;
+  6: using ProjectMVC.Areas.Models.ManageViewModels;
+  6  using App.ExtendMethods;
+  7  using App.ExtendMethods;
+
+Areas\Identity\Controllers\RoleController.cs:
+  6  using System.Threading.Tasks;
+  7  using System.Threading.Tasks;
+  8: using ProjectMVC.Areas.Models.ManageViewModels;
+  9: using ProjectMVC.Areas.Models.RoleViewModels;
+  9  using App.Data;
+  10  using App.Data;
+
+Areas\Identity\Controllers\UserController.cs:
+   7  using System.Threading.Tasks;
+   8  using System.Threading.Tasks;
+   9: using ProjectMVC.Areas.Models.AccountViewModels;
+  10: using ProjectMVC.Areas.Models.ManageViewModels;
+  11: using ProjectMVC.Areas.Models.RoleViewModels;
+  12: using ProjectMVC.Areas.Models.UserViewModels;
+  12  using App.Data;
+  13  using App.Data;
+
+Areas\Identity\Models\Account\ExternalLoginConfirmationViewModel.cs:
+   9  
+  10: namespace ProjectMVC.Areas.Models.AccountViewModels
+  11  {
+
+Areas\Identity\Models\Account\ForgotPasswordViewModel.cs:
+   9  
+  10: namespace ProjectMVC.Areas.Models.AccountViewModels
+  11  {
+
+Areas\Identity\Models\Account\LoginViewModel.cs:
+   9  
+  10: namespace ProjectMVC.Areas.Models.AccountViewModels
+  11  {
+
+Areas\Identity\Models\Account\RegisterViewModel.cs:
+   9  
+  10: namespace ProjectMVC.Areas.Models.AccountViewModels
+  11  {
+
+Areas\Identity\Models\Account\ResetPasswordViewModel.cs:
+   9  
+  10: namespace ProjectMVC.Areas.Models.AccountViewModels
+  11  {
+
+Areas\Identity\Models\Account\SendCodeViewModel.cs:
+   9  
+  10: namespace ProjectMVC.Areas.Models.AccountViewModels
+  11  {
+
+Areas\Identity\Models\Account\UseRecoveryCodeViewModel.cs:
+  5  
+  6: namespace ProjectMVC.Areas.Models.AccountViewModels
+  7  {
+
+Areas\Identity\Models\Account\VerifyAuthenticatorCodeViewModel.cs:
+  5  
+  6: namespace ProjectMVC.Areas.Models.AccountViewModels
+  7  {
+
+Areas\Identity\Models\Account\VerifyCodeViewModel.cs:
+  5  
+  6: namespace ProjectMVC.Areas.Models.AccountViewModels
+  7  {
+
+Areas\Identity\Models\Manage\AddPhoneNumberViewModel.cs:
+   9  
+  10: namespace ProjectMVC.Areas.Models.ManageViewModels
+  11  {
+
+Areas\Identity\Models\Manage\ChangePasswordViewModel.cs:
+   9  
+  10: namespace ProjectMVC.Areas.Models.ManageViewModels
+  11  {
+
+Areas\Identity\Models\Manage\DisplayRecoveryCodesViewModel.cs:
+  6  
+  7: namespace ProjectMVC.Areas.Models.ManageViewModels
+  8  {
+
+Areas\Identity\Models\Manage\EditExtraProfileModel.cs:
+  3  
+  4: namespace ProjectMVC.Areas.Models.ManageViewModels
+  5  {
+
+Areas\Identity\Models\Manage\IndexViewModel.cs:
+  6  
+  7: namespace ProjectMVC.Areas.Models.ManageViewModels
+  8  {
+
+Areas\Identity\Models\Manage\ManageLoginsViewModel.cs:
+  7  
+  8: namespace ProjectMVC.Areas.Models.ManageViewModels
+  9  {
+
+Areas\Identity\Models\Manage\RemoveLoginViewModel.cs:
+   9  
+  10: namespace ProjectMVC.Areas.Models.ManageViewModels
+  11  {
+
+Areas\Identity\Models\Manage\SetPasswordViewModel.cs:
+   9  
+  10: namespace ProjectMVC.Areas.Models.ManageViewModels
+  11  {
+
+Areas\Identity\Models\Manage\VerifyPhoneNumberViewModel.cs:
+   9  
+  10: namespace ProjectMVC.Areas.Models.ManageViewModels
+  11  {
+
+Areas\Identity\Models\Role\CreateRoleModel.cs:
+  2  
+  3: namespace ProjectMVC.Areas.Models.RoleViewModels
+  4  {
+
+Areas\Identity\Models\Role\EditClaimModel.cs:
+  4  
+  5: namespace ProjectMVC.Areas.Models.RoleViewModels
+  6  {
+
+Areas\Identity\Models\Role\EditRoleModel.cs:
+  4  
+  5: namespace ProjectMVC.Areas.Models.RoleViewModels
+  6  {
+
+Areas\Identity\Models\Role\RoleModel.cs:
+   9  
+  10  
+  11: namespace ProjectMVC.Areas.Models.RoleViewModels
+  11  {
+  12  {
+
+Areas\Identity\Models\User\AddUserClaimModel.cs:
+  1  
+  2  
+  3: namespace ProjectMVC.Areas.Models.UserViewModels
+  3  {
+  4  {
+
+Areas\Identity\Models\User\AddUserRoleModel.cs:
+  7  
+  8: namespace ProjectMVC.Areas.Models.UserViewModels
+  9  {
+
+Areas\Identity\Models\User\SetUserPasswordModel.cs:
+  8  
+  9: namespace ProjectMVC.Areas.Models.UserViewModels
+  10  {
+
+Areas\Identity\Models\User\UserListModel.cs:
+  3  
+  4: namespace ProjectMVC.Areas.Models.UserViewModels
+  5  {
+
+Areas\Identity\Views\_ViewImports.cshtml:
+  2  @using App.Models
+  3: @using ProjectMVC.Areas.Models.AccountViewModels
+  4: @using ProjectMVC.Areas.Models.ManageViewModels
+  5: @using ProjectMVC.Areas.Models.RoleViewModels
+  6: @using ProjectMVC.Areas.Models.UserViewModels
+  7  @using Microsoft.AspNetCore.Identity

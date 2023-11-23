@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using ProjectMVC.Models;
 using ProjectMVC.Models.Contacts;
 
-namespace ProjectMVC.Areas.database.Controllers
+namespace ProjectMVC.Areas.Controllers
 {
     [Area("Contact")]
     public class ContactController : Controller

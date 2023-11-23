@@ -1,3 +1,5 @@
+using App.Models;
+using App.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using ProjectMVC.ExtendMethod;
@@ -10,6 +12,16 @@ var connectionString = builder.Configuration.GetConnectionString("AppMvcConnecti
 builder.Services.AddDbContext<AppDbContext>(options => 
     options.UseMySQL(connectionString)
 );
+
+builder.Services.AddSingleton<IdentityErrorDescriber, AppIdentityErrorDescriber>();
+
+// đăng ký dịch vụ mail
+var mailSetting = builder.Configuration.GetSection("MailSettings");
+//đăng ký cấu hình của 1 lớp
+builder.Services.Configure<MailSettings>(mailSetting);
+// đăng ký dịch vụ SendMailService
+builder.Services.AddSingleton<IEmailSender, SendMailService>();
+
 
 //đăng ký dịch vụ Identity
 builder.Services.AddIdentity<AppUser, IdentityRole>()
@@ -67,7 +79,7 @@ builder.Services.AddAuthentication()
                 });
 
 
-                
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
